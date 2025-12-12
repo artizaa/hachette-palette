@@ -1,0 +1,60 @@
+[project]
+name = "hachette-palette"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Alise Dolnykova",email = "artiza777@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<3.14"
+dependencies = [
+    "certifi (==2025.8.3)",
+    "charset-normalizer (==3.4.3)",
+    "clip @ git+https://github.com/openai/CLIP.git@dcba3cb2e2827b402d2701e7e1c7d9fed8a20ef1",
+    "colorama (==0.4.6)",
+    "colorspacious (==1.1.2)",
+    "contourpy (==1.3.0)",
+    "cycler (==0.12.1)",
+    "filelock (==3.19.1)",
+    "fonttools (==4.60.0)",
+    "fsspec (==2025.9.0)",
+    "ftfy (==6.3.1)",
+    "idna (==3.10)",
+    "imageio (==2.37.0)",
+    "importlib-resources (==6.5.2)",
+    "jinja2 (==3.1.6)",
+    "kiwisolver (==1.4.7)",
+    "lazy-loader (==0.4)",
+    "lpips (==0.1.4)",
+    "markupsafe (==3.0.2)",
+    "matplotlib (==3.9.4)",
+    "mpmath (==1.3.0)",
+    "networkx (==3.2.1)",
+    "numpy (==2.0.2)",
+    "packaging (==25.0)",
+    "pillow (==11.3.0)",
+    "psycopg2 (==2.9.10)",
+    "pyparsing (==3.2.5)",
+    "pytelegrambotapi (==4.29.1)",
+    "python-dateutil (==2.9.0.post0)",
+    "python-dotenv (==1.2.1)",
+    "regex (==2025.9.18)",
+    "requests (==2.32.5)",
+    "scikit-image (==0.24.0)",
+    "scipy (==1.13.1)",
+    "six (==1.17.0)",
+    "sympy (==1.14.0)",
+    "tifffile (==2024.8.30)",
+    "torch (==2.8.0)",
+    "torchvision (==0.23.0)",
+    "tqdm (==4.67.1)",
+    "typing-extensions (==4.15.0)",
+    "urllib3 (==2.5.0)",
+    "wcwidth (==0.2.14)",
+    "zipp (==3.23.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
