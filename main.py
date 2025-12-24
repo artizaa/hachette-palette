@@ -70,5 +70,12 @@ def menu(message):
             markers_handler.user_state_db.save_state(chat_id, "main_menu")
         return
 
+    if current_state == "choose_languo_series":
+        res = markers_handler.handle_languo_series_selection(message)
+        if res.get("action") == "back":
+            markers_handler.show_markers_menu(message)
+            markers_handler.user_state_db.save_state(chat_id, "choose_markers")
+        return
+
 print("Бот запущен...")
 bot.infinity_polling()

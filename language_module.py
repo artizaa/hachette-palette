@@ -65,6 +65,14 @@ translations = {
     "no_markers_selected": {
         "en": "No markers selected. Please choose at least one marker from the list.",
         "ru": "Маркеры не выбраны. Пожалуйста, выберите хотя бы один маркер из списка."
+    },
+    "choose_languo_series": {
+        "en": "Choose Languo marker series or press ⬅️ Back",
+        "ru": "Выберите серию маркеров Languo или нажмите ⬅️ Назад"
+    },
+    "btn_select_all": {
+        "en": "Select All",
+        "ru": "Выбрать все"
     }
 }
 

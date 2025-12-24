@@ -106,7 +106,8 @@ class PaletteHandler:
 
         # --- загрузка маркерных словарей, выбранных пользователем ---
         user_markers = self.db_markers.load_marker_state(chat_id) or {}
-        marker_dict = self.markers.load_selected_markers(user_markers)
+        user_languo_series = self.db_markers.load_marker_series(chat_id) or {}
+        marker_dict = self.markers.load_selected_markers(user_markers, user_languo_series)
 
         if not marker_dict:
             self.bot.send_message(chat_id, tr("no_markers_selected", lang))
